@@ -1,0 +1,13 @@
+export function getMax(arr) {
+
+  let maxEven = 0, maxOdd = 0;
+  arr.forEach(item => {
+    if (item % 2 === 0 && item > maxEven) {
+      maxEven = item;
+    } else if (item % 2 !== 0 && item > maxOdd) {
+      maxOdd = item;
+    }
+  });
+
+  return { maxOdd, maxEven };
+};
