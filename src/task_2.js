@@ -13,5 +13,5 @@ export function getArray() {
     !arr.includes(value) ? arr.push(value) : null;
   } while (arr.length < 50);
 
-  return arr;
+  return arr.sort((a, b) => a - b);
 };

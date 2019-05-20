@@ -1,10 +1,15 @@
+const path = require('path');
+
 module.exports = {
   mode: 'development',
   devtool: '(none)',
   entry: './src/main.js',
   output: {
-    path: `${__dirname}/dist/`,
+    path: path.join(__dirname, 'dist'),
     filename: 'app.js',
   },
-  watch: true
+  watch: false,
+  devServer: {
+    contentBase: path.join(__dirname, 'dist')
+  }
 };

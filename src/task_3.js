@@ -1,4 +1,7 @@
-export function getMax(arr) {
+import { getArray } from './task_2';
+
+export function getMax() {
+  const arr = getArray();
 
   let maxEven = 0, maxOdd = 0;
   arr.forEach(item => {
