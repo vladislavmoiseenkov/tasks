@@ -49,11 +49,6 @@ class Hamburger extends Burger {
   }
 
   static get SIZES() {
-    // const sizes = new Set();
-    // sizes.add(Hamburger.HAMBURGER_BIG);
-    // sizes.add(Hamburger.HAMBURGER_SMALL);
-    // return sizes;
-
     return new Set([
         Hamburger.HAMBURGER_BIG,
         Hamburger.HAMBURGER_SMALL
